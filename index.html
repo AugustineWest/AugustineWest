@@ -2,10 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Augustine West</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --accent: #3b82f6;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --card: #1e293b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .subtitle {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    .section {
+      margin-top: 3rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 700px) {
+      .section {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Augustine West</h1>
-  <p>Software & Systems.</p>
+  <div class="container">
+    <h1>Augustine <span>West</span></h1>
+    <p class="subtitle">
+      Independent software studio building intelligent, disciplined tools for modern decision-makers.
+    </p>
+
+    <div class="section">
+      <div class="card">
+        <h2>Financial Systems</h2>
+        <p>
+          Data-driven tools designed to help individuals build structured, income-focused financial strategies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Applied Intelligence</h2>
+        <p>
+          Practical applications that simplify complex real-world decisions through structured logic and automation.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Augustine West. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
