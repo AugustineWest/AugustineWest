@@ -23,6 +23,7 @@
       --text: #e2e8f0;
       --muted: #94a3b8;
       --card: rgba(30, 41, 59, 0.82);
+      --border: rgba(148, 163, 184, 0.12);
     }
 
     * {
@@ -105,55 +106,97 @@
       font-size: 2.5rem;
       font-weight: 800;
       letter-spacing: -1px;
+      line-height: 1.15;
     }
 
     .subtitle {
-      margin-top: 1rem;
+      margin-top: 1.25rem;
       color: var(--muted);
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 1rem;
     }
 
     .rules {
       background: var(--card);
       backdrop-filter: blur(12px);
-      padding: 2.5rem;
-      border-radius: 14px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+      padding: 2.75rem;
+      border-radius: 16px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+      border: 1px solid var(--border);
       text-align: left;
+    }
+
+    .intro {
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .intro h2 {
+      margin-top: 0;
+    }
+
+    .rule-section {
+      padding: 1.35rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .rule-section:last-of-type {
+      border-bottom: none;
     }
 
     .rules h2 {
       font-size: 1.25rem;
-      margin-top: 2.2rem;
-      margin-bottom: 0.8rem;
+      font-weight: 800;
       color: var(--text);
-    }
-
-    .rules h2:first-child {
-      margin-top: 0;
+      margin-bottom: 0.85rem;
+      line-height: 1.35;
     }
 
     .rules p {
       color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 1rem;
+      line-height: 1.75;
+      margin-bottom: 0.9rem;
+      font-size: 0.98rem;
+    }
+
+    .rules p:last-child {
+      margin-bottom: 0;
     }
 
     .rules ul {
       color: var(--muted);
-      line-height: 1.7;
-      padding-left: 1.5rem;
-      margin-bottom: 1rem;
+      line-height: 1.75;
+      padding-left: 1.4rem;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .rules li {
+      margin-bottom: 0.35rem;
+      padding-left: 0.2rem;
     }
 
     .important {
-      color: var(--text) !important;
+      color: var(--text);
       font-weight: 600;
+    }
+
+    .warning {
+      color: var(--text);
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+
+    .contact-block {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
     }
 
     a {
       color: var(--accent);
       text-decoration: none;
+      overflow-wrap: anywhere;
     }
 
     a:hover {
@@ -177,8 +220,23 @@
         font-size: 2rem;
       }
 
+      .subtitle {
+        font-size: 0.95rem;
+      }
+
       .rules {
         padding: 1.5rem;
+        border-radius: 14px;
+      }
+
+      .rules h2 {
+        font-size: 1.12rem;
+      }
+
+      .rules p,
+      .rules ul {
+        font-size: 0.94rem;
+        line-height: 1.7;
       }
     }
   </style>
@@ -207,86 +265,568 @@
 
     <main class="rules">
 
-      <h2>Official Giveaway Rules</h2>
+      <section class="intro">
+        <h2>Official Giveaway Rules</h2>
 
-      <p>
-        These General Official Rules, together with the giveaway-specific
-        terms stated in the applicable XedIntel YouTube video description,
-        collectively constitute the Official Rules for that Promotion.
-      </p>
+        <p>
+          These General Official Rules, together with the giveaway-specific
+          terms stated in the applicable XedIntel YouTube video description—including
+          the prize, approximate retail value, entry period, entry method,
+          eligible entry range (if applicable), and winner-selection procedure—
+          collectively constitute the Official Rules for that Promotion.
+        </p>
 
-      OFFICIAL GIVEAWAY RULES
-XedIntel General Giveaway Official Rules
-Version 1.0 — Effective September 2026 These General Official Rules, together with the giveaway-specific terms stated in the applicable XedIntel YouTube video description—including the prize, approximate retail value, entry period, entry method, eligible entry range (if applicable), and winner-selection procedure—collectively constitute the Official Rules for that Promotion. If there is a conflict between these General Official Rules and the giveaway-specific terms stated in the applicable XedIntel YouTube video description, the giveaway-specific terms will control only for that particular Promotion, to the extent permitted by applicable law.
-1. Sponsor
-Each Promotion is sponsored and administered by: XedIntel YouTube: @XedIntel Contact: XedIntelGiveaways@gmail.com Each Promotion is independently operated by XedIntel. XedIntel is solely responsible for the administration of each Promotion and the awarding of prizes pursuant to these Official Rules.
-2. Eligibility
-Unless otherwise stated in the applicable giveaway-specific terms, each Promotion is open only to legal residents of the 50 United States and District of Columbia who are 18 years of age or older at the time of entry. Residents of U.S. territories and jurisdictions outside the United States are not eligible. Employees, contractors, agents, and immediate household or family members of the Sponsor are not eligible. Entrants must be legally permitted to participate in the Promotion and receive the prize under applicable federal, state, and local law, including any applicable U.S. sanctions restrictions. Void where prohibited or restricted by law. Eligibility is subject to verification before any prize is awarded.
-3. No Purchase Necessary
-NO PURCHASE OR PAYMENT OF ANY KIND IS NECESSARY TO ENTER OR WIN. Making a purchase will not increase an entrant's chance of winning. There is no entry fee. Sponsor will not require a winner to pay shipping charges, processing fees, taxes to the Sponsor, gift cards, cryptocurrency, or any other fee in order to receive a prize.
-4. Entry Period
-Each Promotion begins and ends on the dates and times stated in the applicable XedIntel YouTube video description. Unless otherwise stated, all times are stated in Pacific Time ("PT"). Entries received before the stated opening time or after the stated closing time are not eligible. Sponsor's records regarding submission times will control in the event of a dispute, to the extent permitted by applicable law.
-5. How to Enter
-During the Promotion Period, entrants must follow the entry method stated in the applicable XedIntel YouTube video description. Unless otherwise expressly stated, there is a limit of one entry per natural person, regardless of the number of YouTube accounts or other accounts that person controls. Only the entrant's first valid entry will be considered. Multiple entries, automated entries, bot-generated entries, mass submissions, or entries submitted through multiple accounts controlled by the same person may be disqualified. For Promotions using YouTube comments as entries, edited comments may be disqualified. No purchase, subscription, video like, share, membership, or other YouTube engagement action beyond the stated entry itself is required to enter or win. Entries must comply with YouTube's Community Guidelines. Entries that violate those guidelines will be disqualified. YouTube Community Guidelines: https://support.google.com/youtube/answer/9288567
-6. Winner Determination
-The winner-selection method for each Promotion—including any predetermined number, closest-answer method, objective judging criteria, tie-breaking procedure, or other applicable selection method—will be stated in the applicable XedIntel YouTube video description before the Promotion begins. Sponsor will apply the published winner-selection method consistently to all eligible entries. If a Promotion uses a predetermined number and a cryptographic commitment or other verification method, the applicable giveaway-specific terms may include the verification information and procedure. Sponsor's determination is final, subject to applicable law.
-7. Prize
-The specific prize or prizes, number of winners, and Approximate Retail Value ("ARV") for each Promotion will be stated in the applicable XedIntel YouTube video description. No cash alternative will be offered unless expressly stated in the giveaway-specific terms or required by applicable law. Prizes are nontransferable prior to fulfillment. If a stated prize becomes unavailable for reasons outside Sponsor's reasonable control, Sponsor may substitute a prize of equal or greater approximate retail value where permitted by law.
-8. Winner Notification
-The potential winner will be contacted by the official @XedIntel YouTube channel, including by a reply to the winning comment and/or another contact method made available through YouTube or stated in the applicable giveaway-specific terms. The potential winner may be required to verify ownership of the account used to submit the winning entry and provide reasonable proof of eligibility. If the potential winner:
-cannot be contacted;
-does not respond within five (5) calendar days after Sponsor's initial winner notification;
-cannot verify ownership of the account used to enter;
-is found to be ineligible;
-declines the prize; or
-otherwise fails to comply with these Official Rules,
-the prize may be offered to an alternate eligible entrant determined according to the winner-selection procedure stated for that Promotion.
-9. Scam Warning
-XedIntel will never require a winner to send money, purchase gift cards, provide cryptocurrency, pay shipping, or pay any other fee to receive a prize. Entrants should be cautious of impersonator accounts. Official winner communications will originate only from the official @XedIntel YouTube channel and/or: XedIntelGiveaways@gmail.com Sponsor will never request bank passwords, credit-card information, account login credentials, or other unnecessary financial information from a winner.
-10. Shipping
-Sponsor will pay standard shipping costs to an eligible U.S. mailing address unless otherwise expressly stated in the applicable giveaway-specific terms. The winner is responsible for providing a valid and complete delivery address. Sponsor is not responsible for delays, failed delivery, or loss resulting from inaccurate information supplied by the winner or circumstances outside Sponsor's reasonable control. Any limitations on delivery methods or locations will be stated in the applicable giveaway-specific terms when relevant.
-11. Taxes
-Any federal, state, or local taxes associated with receiving a prize are the sole responsibility of the winner. Prizes and awards may constitute taxable income under applicable U.S. tax law. Sponsor may request information or issue tax documentation if required by applicable law. Entrants should consult their own tax professional regarding the tax consequences of receiving a prize.
-12. Privacy Notice
-Sponsor will collect personal information from a potential winner only as reasonably necessary to:
-verify eligibility;
-identify and contact the winner;
-verify ownership of the account used to enter;
-deliver the prize;
-comply with applicable legal or tax requirements; and
-administer the Promotion.
-Information may include the winner's name, mailing address, email address, proof of age or residency, and any legally required tax information. Personal information collected for the Promotion will not be sold or used for unrelated marketing purposes. Information may be disclosed to shipping providers, professional advisers, tax authorities, governmental agencies, or other parties only when reasonably necessary to administer the Promotion or comply with applicable law. Entrants should not publicly post mailing addresses, phone numbers, financial information, tax identification numbers, identification documents, or other sensitive personal information in YouTube comments. YouTube independently collects and processes information supplied through its platform according to YouTube's own privacy policies.
-13. YouTube Disclaimer and Release
-YouTube is not a sponsor, administrator, promoter, endorser, or affiliate of any XedIntel Promotion unless expressly stated otherwise by YouTube. By entering a Promotion, each entrant agrees, to the extent permitted by applicable law, to release YouTube from any and all liability arising from or related to that Promotion. Each Promotion is administered solely by the Sponsor. Each Promotion and all entries must comply with YouTube's Terms of Service, Community Guidelines, and applicable policies.
-14. Third-Party Brands
-Any third-party trademarks, products, brands, characters, intellectual property, or company names appearing in connection with a prize belong to their respective owners. Unless expressly stated otherwise, no third-party brand associated with a prize sponsors, administers, endorses, or is affiliated with the Promotion. The use of a third-party product as a prize does not imply sponsorship, endorsement, partnership, or affiliation between the third-party rights holder and XedIntel.
-15. Fraud and Technical Problems
-Sponsor may disqualify entries reasonably believed to involve:
-fraud;
-bots;
-automation;
-multiple accounts controlled by one entrant;
-impersonation;
-manipulation;
-tampering;
-falsified eligibility information; or
-violation of these Official Rules or applicable giveaway-specific terms.
-Sponsor is not responsible for entries that are lost, hidden, removed, delayed, filtered as spam, incorrectly timestamped, or otherwise unavailable due to YouTube systems, technical failures, internet connectivity, platform moderation, or circumstances outside Sponsor's reasonable control. If fraud, technical failure, platform disruption, legal restrictions, security issues, or other circumstances materially interfere with the fair administration of a Promotion, Sponsor may modify, suspend, or cancel the Promotion to the extent permitted by applicable law. Sponsor will not modify a Promotion in a manner intended to unfairly advantage or disadvantage any entrant.
-16. Odds
-The odds of winning depend on the number and nature of eligible entries received and the winner-selection method stated for the applicable Promotion. Where a Promotion uses a closest-answer or similar contest mechanism, the distribution of submitted answers may also affect the likelihood of winning. No representation or guarantee is made regarding any entrant's probability of winning.
-17. General Release
-To the fullest extent permitted by applicable law, entrants agree that Sponsor will not be liable for claims, injuries, losses, costs, or damages arising from participation in a Promotion or acceptance, possession, use, or misuse of a prize, except where such limitation is prohibited by law. Nothing in these Official Rules excludes or limits any right or remedy that cannot legally be waived or limited.
-18. Governing Law
-Each Promotion is subject to applicable federal, state, and local law. To the extent permitted by law, these General Official Rules and any Promotion governed by them will be interpreted under the laws of the State of California, without giving effect to conflict-of-law principles. If any provision of these Official Rules is determined to be invalid, unlawful, or unenforceable, the remaining provisions will remain in effect to the fullest extent permitted by law.
+        <p>
+          If there is a conflict between these General Official Rules and the
+          giveaway-specific terms stated in the applicable XedIntel YouTube video
+          description, the giveaway-specific terms will control only for that
+          particular Promotion, to the extent permitted by applicable law.
+        </p>
+      </section>
 
-      <h2>Contact</h2>
 
-      <p>
-        Giveaway inquiries:
-        <a href="mailto:XedIntelGiveaways@gmail.com">
-          XedIntelGiveaways@gmail.com
-        </a>
-      </p>
+      <section class="rule-section">
+        <h2>1. Sponsor</h2>
+
+        <p>Each Promotion is sponsored and administered by:</p>
+
+        <p class="important">
+          XedIntel<br>
+          YouTube: @XedIntel<br>
+          Contact:
+          <a href="mailto:XedIntelGiveaways@gmail.com">
+            XedIntelGiveaways@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Each Promotion is independently operated by XedIntel.
+          XedIntel is solely responsible for the administration of each Promotion
+          and the awarding of prizes pursuant to these Official Rules.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>2. Eligibility</h2>
+
+        <p>
+          Unless otherwise stated in the applicable giveaway-specific terms,
+          each Promotion is open only to legal residents of the
+          <span class="important">50 United States and District of Columbia who are
+          18 years of age or older at the time of entry.</span>
+        </p>
+
+        <p>
+          Residents of U.S. territories and jurisdictions outside the United
+          States are not eligible.
+        </p>
+
+        <p>
+          Employees, contractors, agents, and immediate household or family
+          members of the Sponsor are not eligible.
+        </p>
+
+        <p>
+          Entrants must be legally permitted to participate in the Promotion
+          and receive the prize under applicable federal, state, and local law,
+          including any applicable U.S. sanctions restrictions.
+        </p>
+
+        <p class="important">
+          Void where prohibited or restricted by law.
+        </p>
+
+        <p>
+          Eligibility is subject to verification before any prize is awarded.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>3. No Purchase Necessary</h2>
+
+        <p class="warning">
+          NO PURCHASE OR PAYMENT OF ANY KIND IS NECESSARY TO ENTER OR WIN.
+        </p>
+
+        <p>
+          Making a purchase will not increase an entrant's chance of winning.
+          There is no entry fee.
+        </p>
+
+        <p>
+          Sponsor will not require a winner to pay shipping charges,
+          processing fees, gift cards, cryptocurrency, or any other fee
+          in order to receive a prize.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>4. Entry Period</h2>
+
+        <p>
+          Each Promotion begins and ends on the dates and times stated in the
+          applicable XedIntel YouTube video description.
+        </p>
+
+        <p>
+          Unless otherwise stated, all times are stated in
+          <span class="important">Pacific Time ("PT").</span>
+        </p>
+
+        <p>
+          Entries received before the stated opening time or after the stated
+          closing time are not eligible.
+        </p>
+
+        <p>
+          Sponsor's records regarding submission times will control in the event
+          of a dispute, to the extent permitted by applicable law.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>5. How to Enter</h2>
+
+        <p>
+          During the Promotion Period, entrants must follow the entry method
+          stated in the applicable XedIntel YouTube video description.
+        </p>
+
+        <p>
+          Unless otherwise expressly stated, there is a limit of
+          <span class="important">one entry per natural person</span>,
+          regardless of the number of YouTube accounts or other accounts that
+          person controls.
+        </p>
+
+        <p>
+          Only the entrant's first valid entry will be considered.
+        </p>
+
+        <p>
+          Multiple entries, automated entries, bot-generated entries, mass
+          submissions, or entries submitted through multiple accounts controlled
+          by the same person may be disqualified.
+        </p>
+
+        <p>
+          For Promotions using YouTube comments as entries, edited comments
+          may be disqualified.
+        </p>
+
+        <p>
+          No purchase, subscription, video like, share, membership, or other
+          YouTube engagement action beyond the stated entry itself is required
+          to enter or win.
+        </p>
+
+        <p>
+          Entries must comply with YouTube's Community Guidelines.
+          Entries that violate those guidelines will be disqualified.
+        </p>
+
+        <p>
+          <a
+            href="https://support.google.com/youtube/answer/9288567"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View YouTube Community Guidelines
+          </a>
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>6. Winner Determination</h2>
+
+        <p>
+          The winner-selection method for each Promotion—including any
+          predetermined number, closest-answer method, objective judging criteria,
+          tie-breaking procedure, or other applicable selection method—will be
+          stated in the applicable XedIntel YouTube video description before the
+          Promotion begins.
+        </p>
+
+        <p>
+          Sponsor will apply the published winner-selection method consistently
+          to all eligible entries.
+        </p>
+
+        <p>
+          If a Promotion uses a predetermined number and a cryptographic
+          commitment or other verification method, the applicable giveaway-specific
+          terms may include the verification information and procedure.
+        </p>
+
+        <p>
+          Sponsor's determination is final, subject to applicable law.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>7. Prize</h2>
+
+        <p>
+          The specific prize or prizes, number of winners, and Approximate Retail
+          Value ("ARV") for each Promotion will be stated in the applicable
+          XedIntel YouTube video description.
+        </p>
+
+        <p>
+          No cash alternative will be offered unless expressly stated in the
+          giveaway-specific terms or required by applicable law.
+        </p>
+
+        <p>
+          Prizes are nontransferable prior to fulfillment.
+        </p>
+
+        <p>
+          If a stated prize becomes unavailable for reasons outside Sponsor's
+          reasonable control, Sponsor may substitute a prize of equal or greater
+          approximate retail value where permitted by law.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>8. Winner Notification</h2>
+
+        <p>
+          The potential winner will be contacted by the official
+          <span class="important">@XedIntel YouTube channel</span>,
+          including by a reply to the winning comment and/or another contact
+          method made available through YouTube or stated in the applicable
+          giveaway-specific terms.
+        </p>
+
+        <p>
+          The potential winner may be required to verify ownership of the account
+          used to submit the winning entry and provide reasonable proof of eligibility.
+        </p>
+
+        <p>If the potential winner:</p>
+
+        <ul>
+          <li>cannot be contacted;</li>
+          <li>
+            does not respond within five (5) calendar days after Sponsor's
+            initial winner notification;
+          </li>
+          <li>cannot verify ownership of the account used to enter;</li>
+          <li>is found to be ineligible;</li>
+          <li>declines the prize; or</li>
+          <li>otherwise fails to comply with these Official Rules;</li>
+        </ul>
+
+        <p>
+          the prize may be offered to an alternate eligible entrant determined
+          according to the winner-selection procedure stated for that Promotion.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>9. Scam Warning</h2>
+
+        <p class="important">
+          XedIntel will never require a winner to send money, purchase gift cards,
+          provide cryptocurrency, pay shipping, or pay any other fee to receive a prize.
+        </p>
+
+        <p>
+          Entrants should be cautious of impersonator accounts.
+        </p>
+
+        <p>
+          Official winner communications will originate only from the official
+          <span class="important">@XedIntel YouTube channel</span>
+          and/or:
+        </p>
+
+        <p>
+          <a href="mailto:XedIntelGiveaways@gmail.com">
+            XedIntelGiveaways@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Sponsor will never request bank passwords, credit-card information,
+          account login credentials, or other unnecessary financial information
+          from a winner.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>10. Shipping</h2>
+
+        <p>
+          Sponsor will pay standard shipping costs to an eligible U.S. mailing
+          address unless otherwise expressly stated in the applicable
+          giveaway-specific terms.
+        </p>
+
+        <p>
+          The winner is responsible for providing a valid and complete
+          delivery address.
+        </p>
+
+        <p>
+          Sponsor is not responsible for delays, failed delivery, or loss
+          resulting from inaccurate information supplied by the winner or
+          circumstances outside Sponsor's reasonable control.
+        </p>
+
+        <p>
+          Any limitations on delivery methods or locations will be stated in the
+          applicable giveaway-specific terms when relevant.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>11. Taxes</h2>
+
+        <p>
+          Any federal, state, or local taxes associated with receiving a prize
+          are the sole responsibility of the winner.
+        </p>
+
+        <p>
+          Prizes and awards may constitute taxable income under applicable
+          U.S. tax law.
+        </p>
+
+        <p>
+          Sponsor may request information or issue tax documentation if required
+          by applicable law.
+        </p>
+
+        <p>
+          Entrants should consult their own tax professional regarding the tax
+          consequences of receiving a prize.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>12. Privacy Notice</h2>
+
+        <p>
+          Sponsor will collect personal information from a potential winner only
+          as reasonably necessary to:
+        </p>
+
+        <ul>
+          <li>verify eligibility;</li>
+          <li>identify and contact the winner;</li>
+          <li>verify ownership of the account used to enter;</li>
+          <li>deliver the prize;</li>
+          <li>comply with applicable legal or tax requirements; and</li>
+          <li>administer the Promotion.</li>
+        </ul>
+
+        <p>
+          Information may include the winner's name, mailing address, email
+          address, proof of age or residency, and any legally required tax
+          information.
+        </p>
+
+        <p class="important">
+          Personal information collected for the Promotion will not be sold or
+          used for unrelated marketing purposes.
+        </p>
+
+        <p>
+          Information may be disclosed to shipping providers, professional advisers,
+          tax authorities, governmental agencies, or other parties only when
+          reasonably necessary to administer the Promotion or comply with applicable law.
+        </p>
+
+        <p>
+          Entrants should not publicly post mailing addresses, phone numbers,
+          financial information, tax identification numbers, identification
+          documents, or other sensitive personal information in YouTube comments.
+        </p>
+
+        <p>
+          YouTube independently collects and processes information supplied
+          through its platform according to YouTube's own privacy policies.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>13. YouTube Disclaimer and Release</h2>
+
+        <p class="important">
+          YouTube is not a sponsor, administrator, promoter, endorser, or affiliate
+          of any XedIntel Promotion unless expressly stated otherwise by YouTube.
+        </p>
+
+        <p>
+          By entering a Promotion, each entrant agrees, to the extent permitted
+          by applicable law, to release YouTube from any and all liability arising
+          from or related to that Promotion.
+        </p>
+
+        <p>
+          Each Promotion is administered solely by the Sponsor.
+        </p>
+
+        <p>
+          Each Promotion and all entries must comply with YouTube's Terms of Service,
+          Community Guidelines, and applicable policies.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>14. Third-Party Brands</h2>
+
+        <p>
+          Any third-party trademarks, products, brands, characters,
+          intellectual property, or company names appearing in connection
+          with a prize belong to their respective owners.
+        </p>
+
+        <p>
+          Unless expressly stated otherwise, no third-party brand associated
+          with a prize sponsors, administers, endorses, or is affiliated with
+          the Promotion.
+        </p>
+
+        <p>
+          The use of a third-party product as a prize does not imply sponsorship,
+          endorsement, partnership, or affiliation between the third-party
+          rights holder and XedIntel.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>15. Fraud and Technical Problems</h2>
+
+        <p>
+          Sponsor may disqualify entries reasonably believed to involve:
+        </p>
+
+        <ul>
+          <li>fraud;</li>
+          <li>bots;</li>
+          <li>automation;</li>
+          <li>multiple accounts controlled by one entrant;</li>
+          <li>impersonation;</li>
+          <li>manipulation;</li>
+          <li>tampering;</li>
+          <li>falsified eligibility information; or</li>
+          <li>
+            violation of these Official Rules or applicable giveaway-specific terms.
+          </li>
+        </ul>
+
+        <p>
+          Sponsor is not responsible for entries that are lost, hidden, removed,
+          delayed, filtered as spam, incorrectly displayed or recorded, or
+          otherwise unavailable due to YouTube systems, technical failures,
+          internet connectivity, platform moderation, or circumstances outside
+          Sponsor's reasonable control.
+        </p>
+
+        <p>
+          If fraud, technical failure, platform disruption, legal restrictions,
+          security issues, or other circumstances materially interfere with the
+          fair administration of a Promotion, Sponsor may modify, suspend, or
+          cancel the Promotion to the extent permitted by applicable law.
+        </p>
+
+        <p>
+          Sponsor will not modify a Promotion in a manner intended to unfairly
+          advantage or disadvantage any entrant.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>16. Odds</h2>
+
+        <p>
+          The odds of winning depend on the number and nature of eligible entries
+          received and the winner-selection method stated for the applicable Promotion.
+        </p>
+
+        <p>
+          Where a Promotion uses a closest-answer or similar contest mechanism,
+          the distribution of submitted answers may also affect the likelihood
+          of winning.
+        </p>
+
+        <p>
+          No representation or guarantee is made regarding any entrant's probability
+          of winning.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>17. General Release</h2>
+
+        <p>
+          To the fullest extent permitted by applicable law, entrants agree that
+          Sponsor will not be liable for claims, injuries, losses, costs, or damages
+          arising from participation in a Promotion or acceptance, possession,
+          use, or misuse of a prize, except where such limitation is prohibited by law.
+        </p>
+
+        <p>
+          Nothing in these Official Rules excludes or limits any right or remedy
+          that cannot legally be waived or limited.
+        </p>
+      </section>
+
+
+      <section class="rule-section">
+        <h2>18. Governing Law</h2>
+
+        <p>
+          Each Promotion is subject to applicable federal, state, and local law.
+        </p>
+
+        <p>
+          To the extent permitted by law, these General Official Rules and any
+          Promotion governed by them will be interpreted under the laws of the
+          <span class="important">State of California</span>,
+          without giving effect to conflict-of-law principles.
+        </p>
+
+        <p>
+          If any provision of these Official Rules is determined to be invalid,
+          unlawful, or unenforceable, the remaining provisions will remain in
+          effect to the fullest extent permitted by law.
+        </p>
+      </section>
+
+
+      <section class="contact-block">
+        <h2>Contact</h2>
+
+        <p>
+          Giveaway inquiries:
+        </p>
+
+        <p>
+          <a href="mailto:XedIntelGiveaways@gmail.com">
+            XedIntelGiveaways@gmail.com
+          </a>
+        </p>
+      </section>
 
     </main>
 
